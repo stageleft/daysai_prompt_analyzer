@@ -1,6 +1,6 @@
 # このリポジトリは何か？
 
-[Days AI](https://dayseum-app.studio.site/ja) の個人的使用感をベースとして、オフィシャルテーマを勝手分析して、Stable Diffusionのプロンプトを想定する試みのメモ。
+[Days AI](https://dayseum-app.studio.site/ja) の個人的使用感をベースとして、Days AI公式テーマを勝手分析して、Stable Diffusionのプロンプトを想定する試みのメモ。
 
 なお、以下の仮説において、 Stable Diffusionパラメータかどうかの判断は、NMKD Stable Diffusion GUI のUI要素により行っている。
 
@@ -58,6 +58,7 @@ Days AI は、以下の文字列を結合したものをプロンプトとして
 ## このリポジトリにおけるファイル・ディレクトリ説明一覧
 
 * README.md : 本書
-* official_theme_list_jp.csv : Days AI アプリ
+* official_theme_list_jp.csv : Days AI アプリの公式テーマ（日本語）
+* template_generator_official_theme.rb : 上記ファイルより、公式テーマごとのテンプレートファイルを自動生成するスクリプト
 * uchinoko/*.json : うちの子（OC）
-* official_theme/*.json : 公式テーマファイル
+* official_theme/*.json : 公式テーマ
