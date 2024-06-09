@@ -40,16 +40,18 @@ CSV.foreach("official_theme_list_jp.csv", {encoding: 'BOM|UTF-8', headers: true}
                 ]
             })
         end
-        menu.push({
-            "目的地": [
-                "イタリア🇮🇹 - コロッセオ",
-                "イタリア🇮🇹 - ベネチア",
-                "スペイン🇪🇸 - セビーリャ",
-                "ギリシャ🇬🇷 - アテネ",
-                "ポルトガル🇵🇹 - アルガルヴェ",
-                "マルタ🇲🇹 - バレッタ"
-            ]
-        })
+        if (theme.include? "ワールドツアー") then
+            menu.push({
+                "目的地": [
+                    "イタリア🇮🇹 - コロッセオ",
+                    "イタリア🇮🇹 - ベネチア",
+                    "スペイン🇪🇸 - セビーリャ",
+                    "ギリシャ🇬🇷 - アテネ",
+                    "ポルトガル🇵🇹 - アルガルヴェ",
+                    "マルタ🇲🇹 - バレッタ"
+                ]
+            })
+        end
         menu.push({
             "状況": [
                 "晴れ☀",
@@ -73,6 +75,7 @@ CSV.foreach("official_theme_list_jp.csv", {encoding: 'BOM|UTF-8', headers: true}
                 "恥ずかしがる",
                 "真剣",
                 "舌出し",
+                "舌を出す",
                 "膨れっ面",
                 "怯える",
                 "見下す",
@@ -159,10 +162,13 @@ CSV.foreach("official_theme_list_jp.csv", {encoding: 'BOM|UTF-8', headers: true}
                 "花束を持つ",
                 "注射器を持つ",
                 "スクールバッグを持つ",
+                "ぬいぐるみを持つ",
                 "振り向く",
                 "胸に手を置く",
                 "手を口に添える",
                 "宙に浮く",
+                "キャンディーを持つ",
+                "横たわる",
             ]
         })
         menu.push({
