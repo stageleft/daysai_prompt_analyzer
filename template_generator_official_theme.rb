@@ -53,10 +53,12 @@ CSV.foreach("official_theme_list_jp.csv", {encoding: 'BOM|UTF-8', headers: true}
                 "ニヤニヤする",
                 "驚く",
                 "あくびをする",
+                "あくびする",
                 "恥ずかしがる",
                 "真剣",
                 "舌出し",
-                "膨れっ面"
+                "膨れっ面",
+                "怯える",
             ]
         })
         menu.push({
@@ -130,15 +132,17 @@ CSV.foreach("official_theme_list_jp.csv", {encoding: 'BOM|UTF-8', headers: true}
         menu.push({
             "ポーズ": [
                 "ポケットに手を入れる",
+                "座る",
                 "床に座る",
                 "しゃがむ",
                 "ピースピース",
                 "前屈みになる",
+                "杖を持つ",
                 "銃を持つ",
-                "座る",
                 "スクールバッグを持つ",
                 "振り向く",
-                "旨に手を置く",        
+                "胸に手を置く",
+                "手を口に添える",
             ]
         })
         menu.push({
@@ -149,6 +153,9 @@ CSV.foreach("official_theme_list_jp.csv", {encoding: 'BOM|UTF-8', headers: true}
                 "教室",
                 "鉄条網",
                 "ダブルベッド",
+                "雷雲",
+                "遺跡とマグマ",
+                "西洋風の部屋",        
             ]
         })
         menu.push({
