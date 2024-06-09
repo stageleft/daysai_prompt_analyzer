@@ -78,12 +78,14 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "笑顔",
                     "無表情",
                     "泣く",
+                    "号泣",
                     "ウィンク",
                     "目を閉じて笑う",
                     "ニヤニヤする",
                     "驚く",
-                    "あくびをする",
+                    "あくび",
                     "あくびする",
+                    "あくびをする",
                     "恥ずかしがる",
                     "真剣",
                     "真剣な",
@@ -93,6 +95,9 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "怯える",
                     "見下す",
                     "赤面する",
+                    "あせあせ",
+                    "混乱する",
+                    "軽蔑",            
                 ]
             })
         end
