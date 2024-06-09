@@ -40,6 +40,15 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                 ]
             })
         end
+        if ("#{row["スタイルの強さ"]}" == "Yes" or "#{row["スタイルの強さ"]}" == "Uncertain") then
+            menu.push({
+                "スタイルの強さ": [
+                    "弱",
+                    "中",
+                    "強",
+                ]
+            })
+        end
         if ("#{row["目的地"]}" == "Yes" or "#{row["目的地"]}" == "Uncertain") then
             menu.push({
                 "目的地": [
