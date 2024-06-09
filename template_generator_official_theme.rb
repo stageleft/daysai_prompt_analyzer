@@ -97,7 +97,15 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "赤面する",
                     "あせあせ",
                     "混乱する",
-                    "軽蔑",            
+                    "軽蔑",
+                    "怒る",
+                    "取り乱す",
+                    "酔っ払い",
+                    "パニック",
+                    "しかめっ面",
+                    "ドヤ顔",
+                    "不安顔",
+                    "病んでる顔",            
                 ]
             })
         end
