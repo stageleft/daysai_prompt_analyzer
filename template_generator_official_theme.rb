@@ -230,6 +230,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                 ]
             })
         end
+=begin
         menu.push({
             "menu1": [
                 "select1",
@@ -242,6 +243,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                 "select2"
             ]
         })
+=end
         initial_data["menu"] = menu
         File.open(filename, "w", 0666) { |f|
             f.puts JSON.pretty_generate(initial_data)
