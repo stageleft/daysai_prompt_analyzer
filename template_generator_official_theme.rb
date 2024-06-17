@@ -106,6 +106,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "ドヤ顔",
                     "不安顔",
                     "病んでる顔",            
+                    "大笑いする",
                 ]
             })
         end
@@ -205,6 +206,9 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "キャンディーを持つ",
                     "横たわる",
                     "横になる",
+                    "膝立ち",
+                    "腕を上げる",
+                    "祈る",
                 ]
             })
         end
@@ -227,6 +231,9 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "藤の花",
                     "紅葉",
                     "和座敷",
+                    "針葉樹林",
+                    "森の中の泉",
+                    "灰色のベッド"            
                 ]
             })
         end
