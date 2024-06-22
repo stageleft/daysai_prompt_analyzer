@@ -76,6 +76,8 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             menu.push({
                 "表情": [
                     "笑顔",
+                    "口を開けて笑う",
+                    "大笑いする",
                     "無表情",
                     "泣く",
                     "号泣",
@@ -98,6 +100,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "あせあせ",
                     "混乱する",
                     "軽蔑",
+                    "軽蔑する",
                     "怒る",
                     "取り乱す",
                     "酔っ払い",
@@ -105,8 +108,8 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "しかめっ面",
                     "ドヤ顔",
                     "不安顔",
-                    "病んでる顔",            
-                    "大笑いする",
+                    "病んでる顔",
+                    "考え事をする",
                 ]
             })
         end
@@ -243,15 +246,18 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                 ]
             })
         end
+        if ("#{row["角度"]}" == "Yes" or "#{row["角度"]}" == "Uncertain") then
+            menu.push({
+                "角度": [
+                    "ランダム",
+                    "正面から",
+                    "横から",
+                ]
+            })
+        end
 =begin
         menu.push({
             "menu1": [
-                "select1",
-                "select2"
-            ]
-        })
-        menu.push({
-            "menu2": [
                 "select1",
                 "select2"
             ]
