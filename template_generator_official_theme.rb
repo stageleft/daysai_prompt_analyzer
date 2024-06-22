@@ -252,6 +252,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "ランダム",
                     "正面から",
                     "横から",
+                    "向こうを見る",
                 ]
             })
         end
