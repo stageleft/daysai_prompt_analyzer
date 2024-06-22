@@ -188,10 +188,12 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "ポケットに手を入れる",
                     "座る",
                     "床に座る",
+                    "足を組んで座る",
                     "しゃがむ",
                     "ピースピース",
                     "前屈みになる",
                     "剣を握る",
+                    "剣を持つ",
                     "杖を持つ",
                     "銃を持つ",
                     "花束を持つ",
@@ -208,6 +210,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "横になる",
                     "膝立ち",
                     "腕を上げる",
+                    "握り拳",
                     "祈る",
                 ]
             })
@@ -233,7 +236,10 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "和座敷",
                     "針葉樹林",
                     "森の中の泉",
-                    "灰色のベッド"            
+                    "灰色のベッド",
+                    "石の神殿",
+                    "岩の砂漠",
+                    "神殿の廃墟",
                 ]
             })
         end
