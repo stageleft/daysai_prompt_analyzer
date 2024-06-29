@@ -120,12 +120,17 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
         if ("#{row["服装"]}" == "Yes" or "#{row["服装"]}" == "Uncertain") then
             menu.push({
                 "服装": [
+                    "clothing_icon/01_kimono_着物.png",
+                    "clothing_icon/02_miko_巫女服.png",
                     "シャツ",
                     "コート",
                     "セーター",
                     "フード付きパーカー",
                     "上品なドレス",
-                    "セーラー服"
+                    "セーラー服",
+                    "制服",
+                    "体操服",
+                    "バスケットボール"            
                 ]
             })
         end
@@ -225,6 +230,10 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
         if ("#{row["背景"]}" == "Yes" or "#{row["背景"]}" == "Uncertain") then
             menu.push({
                 "背景（イラストイメージ）": [
+                    "place_icon/01_classroom_教室.png",
+                    "place_icon/02_park_公園.png",
+                    "place_icon/03_restaurant_食事処.png",
+                    "place_icon/04_beach_砂浜.png",
                     "落書きの壁",
                     "夜の繁華街",
                     "ビルの屋上",
