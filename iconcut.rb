@@ -16,8 +16,8 @@ require 'cairo'
 in_width = 1179
 in_height = 2556
 
-out_xpos = [97,435,769]
-out_ypos = [690]
+out_xpos = [97,435,773]
+out_ypos = [690, 1028]
 out_width = 308
 out_height = 308
 
@@ -46,7 +46,7 @@ Dir.glob("#{in_dir}/*").each{|in_name|
     out_name = in_name.downcase.gsub("#{in_dir}", "#{out_dir}")
     for i in 0...out_xpos.size do
         for j in 0...out_ypos.size do
-            trim(in_name, out_name.gsub(".png", "_#{i+1}_#{j+1}.png"), out_xpos[i], out_ypos[j], out_width, out_height)
+            trim(in_name, out_name.gsub(".png", "_#{j+1}_#{i+1}.png"), out_xpos[i], out_ypos[j], out_width, out_height)
         end
     end
 }

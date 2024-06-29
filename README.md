@@ -67,5 +67,5 @@ Days AI は、以下の文字列を結合したものをプロンプトとして
 * uchinoko/*.json : うちの子（OC）
 * official_theme/*.json : 公式テーマ
   * official_theme/*_icon/*.png : 公式テーマに用いられているアイコン。
-    * ファイル名は xx_(prompt)_日本語説明.png の形式とする。xx部分は登場順のIDとする。prompt部分は Stable Diffusion 標準の DeepBooru にてアイコンを解析させ、抽出したキーワードとする。
+    * ファイル名は xx_(prompt)_日本語説明.png の形式とする。xx部分は登場順のIDとする。prompt部分は Stable Diffusion 標準の i2t 機能である DeepBooru または Clip にてアイコンを解析させ、抽出したキーワードとする。
 * iconcut.rb : アイコン切り抜きプログラム。上記 official_theme/*_icon/*.png の作成に用いる。

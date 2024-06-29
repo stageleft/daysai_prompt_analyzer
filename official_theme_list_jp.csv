@@ -1,8 +1,8 @@
 ﻿id,テーマ名,性別,スタイルの強さ,目的地,状況,表情,服装,服装Ex,ポーズ,背景,角度
 1,山【縦型】,すべて,,,,,,,,,
 2,山,すべて,,,,,,,,,
-3,神社,すべて,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,
-4,アライグマ,すべて,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,
+3,神社,すべて,,,Yes,,Yes,,,Yes,Yes
+4,アライグマ,すべて,,,,Yes,,,,Yes,
 5,制服,すべて,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,
 6,大都市,すべて,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,
 7,ギフト,女性,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,Uncertain,
