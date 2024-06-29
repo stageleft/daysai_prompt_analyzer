@@ -4,7 +4,7 @@ require "csv"
 require "json"
 
 all_selection = {}
-Dir.glob("official_theme/*.json") { |filename|
+Dir.glob("official_theme/*.json").sort_by{|fn| format("%04d", fn.sub(/.*\//,'').sub(/_.*/,'')).to_i }.each { |filename|
     # puts filename
     File.open(filename) { |f|
         selection = JSON.load(f)

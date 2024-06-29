@@ -63,9 +63,12 @@ Days AI は、以下の文字列を結合したものをプロンプトとして
 * unlisted_theme_list_jp.csv : Days AI アプリの公式テーマ（日本語）うち、「新着」表示なしテーマ
   * 基本的には、テーマ欄にて半角スペースにて検索すると、新着表示ありテーマに混ざって検索可能。
   * テーマなしは検索不可。偶然見えるテーマを拾って保存するしかない。
-* template_generator_official_theme.rb : 上記ファイルより、公式テーマごとのテンプレートファイルを自動生成するスクリプト
+* template_generator_official_theme.rb : 上記ファイルより、公式テーマごとのテンプレートファイルを生成するスクリプト ※テンプレート作成の手間削減のためであり、別に生成しなくてもよい。
 * uchinoko/*.json : うちの子（OC）
 * official_theme/*.json : 公式テーマ
   * official_theme/*_icon/*.png : 公式テーマに用いられているアイコン。
     * ファイル名は xx_(prompt)_日本語説明.png の形式とする。xx部分は登場順のIDとする。prompt部分は Stable Diffusion 標準の i2t 機能である DeepBooru または Clip にてアイコンを解析させ、抽出したキーワードとする。
 * iconcut.rb : アイコン切り抜きプログラム。上記 official_theme/*_icon/*.png の作成に用いる。
+* template_collector_official_theme.rb : 上記 official_theme/*.json ファイル群よりワードを抽出しワードリストを生成するスクリプト。
+* template_all_selection.json : template_collector_official_theme.rb により生成されたワードリスト。 template_generator_official_theme.rb で用いる。
+* official_theme_list_jp.header.csv : template_collector_official_theme.rb により生成されたカテゴリリスト。 official_theme_list_jp.csv の更新時に参照する。
