@@ -1,0 +1,38 @@
+{
+  "theme": "にゃんにゃんぽーず",
+  "menu": {
+    "キャラクター": [
+      "うちの子(1,...)",
+      "ランダムキャラクター（女性）"
+    ],
+    "Clothing": [
+      "巫女服",
+      "ブレザーの制服",
+      "セーラー服",
+      "メイド服",
+      "バニーガール",
+      "ゴスロリ",
+      "ふわふわパジャマ",
+      "サンタコス",
+      "上品なドレス"
+    ],
+    "Expression": [
+      "笑顔",
+      "口を開けて笑う",
+      "恥ずかしがる",
+      "ニヤニヤする",
+      "軽蔑する",
+      "怒る",
+      "無表情"
+    ],
+    "Background": [
+      "background_icon/01_white_白地.png",
+      "background_icon/02_pink_桃色.png",
+      "background_icon/03_blue_青地.png",
+      "background_icon/04_heart_balloon_ハートマーク.png",
+      "background_icon/05_green_緑地.png",
+      "background_icon/06_confetti_紙吹雪.png",
+      "Other その他"
+    ]
+  }
+}
