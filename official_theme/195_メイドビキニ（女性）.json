@@ -1,0 +1,43 @@
+{
+  "theme": "メイドビキニ",
+  "menu": {
+    "キャラクター": [
+      "うちの子(1,...)",
+      "ランダムキャラクター（女性）"
+    ],
+    "表情": [
+      "ニヤニヤする",
+      "笑顔",
+      "目を閉じて笑う",
+      "無表情",
+      "ウィンク",
+      "驚く",
+      "泣く",
+      "怒る"
+    ],
+    "ビキニの色": [
+      "color_icon/*.png",
+      "color_icon/*.png",
+      "color_icon/*.png",
+      "color_icon/*.png",
+      "color_icon/*.png",
+      "color_icon/*.png",
+      "color_icon/*.png",
+      "color_icon/*.png",
+      "color_icon/*.png"
+    ],
+    "ポーズ": [
+      "前屈みになる",
+      "胸に手を置く",
+      "座る",
+      "お給仕する",
+      "腕を上げる",
+      "ピースピース"
+    ],
+    "背景": [
+      "place_icon/*.png",
+      "place_icon/*.png",
+      "place_icon/*.png"
+    ]
+  }
+}
