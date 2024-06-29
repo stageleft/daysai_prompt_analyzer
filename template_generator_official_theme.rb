@@ -7,7 +7,7 @@ all_selection = {}
 File.open("template_all_selection.json") { |f|
     all_selection = JSON.load(f)
 }
-puts all_selection
+# puts all_selection
 
 theme_list = {}
 File.open("official_theme_list_jp.csv") {|f|
