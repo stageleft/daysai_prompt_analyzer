@@ -16,23 +16,23 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
         p filename + " not exists. create."
         initial_data = {}
         initial_data["theme"] = "#{theme}"
-        menu = []
+        menu = {}
         if (gender == "女性") then
-            menu.push({
+            menu.update({
                 "キャラクター": [
                     "うちの子(1,...)",
                     "ランダムキャラクター（女性）"
                 ]
             })
         elsif (gender == "男性") then
-            menu.push({
+            menu.update({
                 "キャラクター": [
                     "うちの子(1,...)",
                     "ランダムキャラクター（男性）"
                 ]
             })
         else
-            menu.push({
+            menu.update({
                 "キャラクター": [
                     "うちの子(1,...)",
                     "ランダムキャラクター（女性）",
@@ -41,7 +41,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["スタイルの強さ"]}" == "Yes" or "#{row["スタイルの強さ"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "スタイルの強さ": [
                     "弱",
                     "中",
@@ -50,7 +50,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["目的地"]}" == "Yes" or "#{row["目的地"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "目的地": [
                     "イタリア🇮🇹 - コロッセオ",
                     "イタリア🇮🇹 - ベネチア",
@@ -62,7 +62,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["状況"]}" == "Yes" or "#{row["状況"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "状況": [
                     "晴れ☀",
                     "曇り☁",
@@ -73,7 +73,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["表情"]}" == "Yes" or "#{row["表情"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "表情": [
                     "笑顔",
                     "口を開けて笑う",
@@ -118,7 +118,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["服装"]}" == "Yes" or "#{row["服装"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "服装": [
                     "clothing_icon/01_kimono_着物.png",
                     "clothing_icon/02_miko_巫女服.png",
@@ -135,14 +135,14 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["服装Ex"]}" == "Yes" or "#{row["服装Ex"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "帽子": [
                     "なし",
                     "野球帽",
                     "ニット帽"
                 ]
             })
-            menu.push({
+            menu.update({
                 "トップス": [
                     "シャツ",
                     "へそ出しTシャツ",
@@ -155,7 +155,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "タンクトップ"
                 ]
             })
-            menu.push({
+            menu.update({
                 "上着": [
                     "なし",
                     "ジャケット",
@@ -165,7 +165,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "ファージャケット"
                 ]
             })
-            menu.push({
+            menu.update({
                 "ボトムス": [
                     "ストレッチパンツ",
                     "ホットパンツ",
@@ -175,13 +175,13 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
                     "スカート"
                 ]
             })
-            menu.push({
+            menu.update({
                 "セーラー服の色（イラストイメージ）": [
                     "黒",
                     "白"
                 ]
             })
-            menu.push({
+            menu.update({
                 "ネッカーチーフの色（イラストイメージ）": [
                     "黒",
                     "白",
@@ -195,7 +195,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["ポーズ"]}" == "Yes" or "#{row["ポーズ"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "ポーズ": [
                     "ポケットに手を入れる",
                     "座る",
@@ -228,7 +228,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["背景"]}" == "Yes" or "#{row["背景"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "背景（イラストイメージ）": [
                     "place_icon/01_classroom_教室.png",
                     "place_icon/02_park_公園.png",
@@ -260,7 +260,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
         if ("#{row["角度"]}" == "Yes" or "#{row["角度"]}" == "Uncertain") then
-            menu.push({
+            menu.update({
                 "角度": [
                     "ランダム",
                     "正面から",
@@ -270,7 +270,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
             })
         end
 =begin
-        menu.push({
+        menu.update({
             "menu1": [
                 "select1",
                 "select2"
@@ -279,7 +279,7 @@ CSV.foreach("official_theme_list_jp.csv", **{encoding: 'BOM|UTF-8', headers: tru
 =end
         initial_data["menu"] = menu
         File.open(filename, "w", 0666) { |f|
-            f.puts JSON.pretty_generate(initial_data)
+            f.print JSON.pretty_generate(initial_data)
         }
     end
 end
