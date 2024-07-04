@@ -1,0 +1,26 @@
+{
+  "theme": "古代遺跡",
+  "menu": {
+    "キャラクター": [
+      "うちの子(1,...)",
+      "ランダムキャラクター（女性）",
+      "ランダムキャラクター（男性）"
+    ],
+    "Clothing": [
+      "western-style armor",
+      "explorer-style clothing",
+      "military or naval uniforms",
+      "bikini armor (for girl)",
+      "dress-like armor (for girl)",
+      "shoulderless armor (for girl)",
+      "sexy armor (for girl)",
+      "dancing girl style (for girl)",
+      "samurai style (for boy)"
+    ],
+    "Hours": [
+      "noon",
+      "night",
+      "evening"
+    ]
+  }
+}
