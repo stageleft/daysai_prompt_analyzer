@@ -1,0 +1,29 @@
+{
+  "theme": "森林",
+  "menu": {
+    "キャラクター": [
+      "うちの子(1,...)",
+      "ランダムキャラクター（女性）",
+      "ランダムキャラクター（男性）"
+    ],
+    "服装": [
+      "長袖のドレス",
+      "セータードレス",
+      "制服",
+      "ブラウス＆スカート",
+      "オフショルダーセーター",
+      "タートルネック×デニムパンツ",
+      "タンクトップ×半ズボン",
+      "革ジャケット",
+      "ジャージ"
+    ],
+    "どんな森林？": [
+      "place_icon/05_forest_森.png",
+      "place_icon/06_forest_autumn_紅葉.png",
+      "place_icon/07_bamboo_forest_竹林.png",
+      "place_icon/08_river_forest_川沿いの森.png",
+      "place_icon/09_jungle_forest_密林.png",
+      "place_icon/10_snow_forest_冬の森.png"
+    ]
+  }
+}
